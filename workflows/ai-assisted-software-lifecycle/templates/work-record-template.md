@@ -39,6 +39,18 @@ detail. Record actual state and evidence per affected scope/discipline.
 | Phase | Inputs / candidate | Work performed | Artifact or observation | Exit met / blocked / not applicable and reason |
 | --- | --- | --- | --- | --- |
 
+## Agile planning and ticket state
+
+Reference the [planning record](../../agile-work-management/templates/planning-record-template.md)
+or equivalent project records; the agile workflow owns the detailed rules.
+
+- Selected method and policy; actual accountable team/owners:
+- Requirement/review sources, ticket links/revisions and parent/dependency mapping:
+- Eligible versus selected items; Sprint Goal/Backlog or flow pull/WIP decision:
+- Why/what/how answers and capacity/DoD assumptions; actual planning record:
+- Defined event/trigger rules versus actual occurrences, configured bindings and OPEN fields:
+- Progress/blockers, integration/Done evidence, unfinished work and learning outcomes:
+
 ## Decisions and authority
 
 | Decision ID | Choice / alternatives / rationale | Scope and candidate | Authority mode / actual source or owner | Effects / recovery option | Outstanding decision / recheck |
