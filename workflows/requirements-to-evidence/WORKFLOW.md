@@ -83,6 +83,17 @@ separate agents only within actual authorization and runtime support.
    A criterion is ready for test design when its expected outcome is established;
    unresolved material choices block only their dependent scope.
 
+## Ticket selection and delivery coordination
+
+Pass requirement/criterion revisions, useful slices, dependencies, test-design
+needs and unresolved choices to [Agile Work Management and Ticket Flow](../agile-work-management/WORKFLOW.md).
+That workstream owns Sprint/flow selection and ticket movement rules; this one
+retains acceptance, traceability, test matrix and evidence rules. Link artifacts
+instead of duplicating them. Selection, readiness, ticket closure and qualified
+evidence are distinct scoped states. Splitting work preserves parent coverage
+and cross-slice integration obligations. Feedback and scope changes re-enter
+this workstream for affected criteria/evidence assessment.
+
 ## Test design, pyramid and living matrix
 
 Develop test design alongside the criteria, before depending on implementation

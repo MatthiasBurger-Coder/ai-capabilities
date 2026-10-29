@@ -59,6 +59,7 @@ lifecycle route and project policy.
 | [AI-Assisted Software Lifecycle](workflows/ai-assisted-software-lifecycle/WORKFLOW.md) | Overall process: route tasks through applicable phases and control consequential actions | Evidenced delivery with decisions, limitations and next ownership |
 | [Five Amigos Lifecycle Review](workflows/five-amigos-round-table/WORKFLOW.md) | Optional lifecycle sub-process: resolve material uncertainty through five perspectives | One reviewed candidate, explicit positions and unresolved decisions |
 | [Requirements-Driven Development and Verification](workflows/requirements-to-evidence/WORKFLOW.md) | Lifecycle workstream: develop user needs into requirements, acceptance, test design and qualified evidence | Traceable requirements, living test matrix and candidate-bound evidence |
+| [Agile Work Management and Ticket Flow](workflows/agile-work-management/WORKFLOW.md) | Cross-cutting workstream: connect refined requirements and review findings to tickets, Sprint/flow selection, execution and learning | Explicit selection decisions, scoped ticket transitions and project-specific event bindings |
 | [Architecture Decisions and Evolution](workflows/architecture-design/WORKFLOW.md) | Lifecycle workstream: assess system structure, data, quality, integration, operation and change | Scoped decisions, tradeoffs, evidence needs, risks and transition plans |
 | [Documentation-as-Code](workflows/documentation-as-code/WORKFLOW.md) | Cross-cutting lifecycle sub-process: connect stakeholder vision to delivery and independent events | Sourced AsciiDoc, bidirectional traceability and validation evidence |
 
@@ -95,6 +96,11 @@ flowchart LR
     Amigos --> AmigosContent["Shared sources and perspectives<br/>objections and consensus<br/>conditional full review"]
     Process --> Coordination["🆕 Roles and coordination"]
     Coordination --> CoordinationContent["Sequential dependencies<br/>parallel work<br/>shared candidate reconciliation"]
+    Process --> Agile["✅ Agile work management"]
+    Agile --> AgileMethods["Scrum, Kanban, Scrumban and Nexus selection"]
+    Agile --> AgileFlow["Ticket decomposition and dependencies; planning questions; pull and WIP"]
+    Agile --> AgileEvents["Derived events and guards; actual occurrences; open project bindings"]
+    Agile --> AgileOpen["○ Operational validation and detailed method applications"]
     Root --> Requirements["📁 Requirements development"]
     Requirements --> Need["🆕 User need"]
     Need --> NeedContent["Users and tasks<br/>problem and intended benefit<br/>sources, assumptions and non-goals"]
@@ -353,6 +359,25 @@ and [test matrix](workflows/requirements-to-evidence/templates/test-matrix-templ
 or reuse equivalent project artifacts. Product/test work can be sequential or
 parallel with explicit dependencies. Requirement changes reopen affected evidence;
 qualified scoped evidence returns to the lifecycle's overall candidate assessment.
+
+## Agile work management and ticket flow
+
+The [agile work-management workstream](workflows/agile-work-management/WORKFLOW.md) connects requirements,
+Five Amigos and engineering delivery through the adopting project's tickets.
+Refinement and review develop selectable outcomes; actual planning selects work
+for a Sprint or a continuous flow. Scrum planning answers why, what and how;
+Kanban uses explicit pull/WIP rules; Scrumban records its chosen combination;
+Nexus adds shared integration and cross-team coordination. Engineering and
+work-management states remain distinct.
+
+Process questions and outcomes derive event types, trigger guards and next
+routes. Their definition does not depend on knowing the occurrence time or
+technical binding. Record actual events only from real sources; schedule,
+responsibility and ticket-system integration remain explicit project decisions.
+Five Amigos completion does not establish Sprint selection or implementation
+completion. Use the [planning record](workflows/agile-work-management/templates/planning-record-template.md)
+with the lifecycle policy/work record. Current coverage is a process draft,
+not evidence of configured automation or validated agile operation.
 
 ## Architecture decisions and evolution
 

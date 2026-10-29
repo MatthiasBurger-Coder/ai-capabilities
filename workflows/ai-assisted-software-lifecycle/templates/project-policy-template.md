@@ -44,6 +44,21 @@ using existing project specifications and test-management records where suitable
 - Product/test work ordering, parallel ownership and candidate reconciliation:
 - Event-source mapping, requirement-change impact and evidence-reuse assessment:
 
+## Agile work management and ticket system
+
+Adapt [Agile Work Management and Ticket Flow](../../agile-work-management/WORKFLOW.md).
+
+- Selected method (Scrum/Kanban/Scrumban/Nexus), rationale and explicit deviations:
+- Real accountable owners, product goal/backlog and team capacity sources:
+- Sprint cadence/events or workflow start/finish, pull/WIP and replenishment rules:
+- Planning why/what/how; applicable Definition of Done and readiness agreement:
+- Ticket system/record source, identity/revision and state mapping:
+- Parent/child decomposition, dependency links and shared integration obligations:
+- Five Amigos findings to eligibility; actual selection decision and authority:
+- Event types/guards derived from process; actual sources/timing/bindings or OPEN owner:
+- Manual versus configured automation, duplicate/conflict handling and allowed mutations:
+- Inspection, unfinished work, review/retrospective and flow improvement policy:
+
 ## Events and trigger rules
 
 Use the lifecycle event vocabulary or define a project-specific event. An event

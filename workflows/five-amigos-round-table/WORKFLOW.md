@@ -66,6 +66,17 @@ grant no approval or implementation rights and are not active agent definitions.
    template. Missing authority leaves the choice proposed; emitting a definition
    does not prove that an action, event integration or document update occurred.
 
+## Planning and ticket handoff
+
+When the invoking question concerns delivery planning, return requirement and
+criterion revisions, feasible decomposition, test needs, dependencies, unresolved
+choices and readiness evidence. The [agile work-management workflow](../agile-work-management/WORKFLOW.md)
+defines how those findings are assessed for ticket eligibility and actual Sprint
+or flow selection. Reuse this review's scoped `review.completed` occurrence.
+A session can be adjacent to Sprint Planning; retain separate records of its
+review findings and the Scrum Team's actual goal, selection and delivery plan.
+The review does not allocate capacity, select a Sprint or confer Scrum accountabilities.
+
 ## Stop and handoff
 
 Use one shared discussion and final confirmation by default. Add one further
