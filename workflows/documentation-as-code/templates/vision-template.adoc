@@ -1,0 +1,31 @@
+= Stakeholder Vision: <Title>
+
+Status: draft. Complete from actual stakeholder input; placeholders are not facts.
+
+== Source and ownership
+
+* Vision ID:
+* Actual stakeholder / source reference:
+* Source date or revision:
+* Decision owner and existing authority:
+
+== Problem and intended outcome
+
+* Current problem and affected users:
+* Representative working context:
+* Desired benefit and observable outcome:
+* Scope and non-goals:
+
+== Constraints and uncertainty
+
+* Known constraints, including timing, budget and mandated technology:
+* Relevant data classification and policy constraints:
+* Assumptions, alternatives and unresolved questions:
+* Decisions requiring actual stakeholder input:
+
+== Traceability and next step
+
+* Derived goal / requirement IDs, once formulated:
+* Actual review feedback and its sources:
+* Confirmation or approval source and reviewed version, if it exists:
+* Next action and responsible owner:

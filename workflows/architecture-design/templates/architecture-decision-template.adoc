@@ -1,0 +1,38 @@
+= Architecture Decision: <ID and Title>
+
+Status: proposed. Replace only when an actual sourced decision exists.
+
+== Context
+
+* Affected requirements, quality goals and architecture scope:
+* Inspected sources and candidate/revision:
+* Existing constraints and decision authority:
+* Problem requiring this decision:
+* Selected architectural concerns and affected specialists/owners:
+
+== Options and consequences
+
+[cols="1,2,2,2"]
+|===
+|Option |Fit with requirements and current architecture |Costs / risks / consequences |Required prerequisites
+| | | |
+|===
+
+== Proposal or actual decision
+
+* Proposed or chosen option and rationale:
+* Affected system/data ownership, quality, contracts, runtime, deployment and operation:
+* Internal design consequences, including ports/adapters only where relevant:
+* Cost/support, compatibility, migration, verification and recovery consequences:
+* Unresolved assumptions and owners:
+
+== Decision evidence and history
+
+* Actual decision-maker, authority source and reviewed version:
+* Decision date, conditions and evidence reference, if recorded:
+* Supersedes / superseded-by IDs, when applicable:
+* Implementation evidence, independently of decision status:
+* Executed verification and its limitations, independently of the proposal:
+
+Do not infer approval from an implemented option, review consensus or a green check.
+Preserve historical decisions and link a successor when changing a prior decision.

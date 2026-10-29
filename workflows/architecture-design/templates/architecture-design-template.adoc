@@ -1,0 +1,112 @@
+= Architecture Assessment and Design: <Scope>
+
+Status: proposal. Complete from inspected sources; this template is not an approved decision or verified implementation.
+Use the concern selection in the architecture workflow and map results to existing target-project arc42 records. Split longer standalone records into owning files.
+
+== Scope and current state
+
+* Design/review ID, triggering event and candidate/revision:
+* Actual sources, linked vision, requirements and existing decisions:
+* System context, stakeholders, in-scope boundaries and non-goals:
+* Current architecture versus desired behavior:
+* Constraints: technology, data classification, deadlines, budget and operating context:
+
+== Vision, project profile and review questions
+
+* Actual project scope/scale: domains, users, data, integrations, workload and criticality:
+* Team/ownership, delivery/operating scope, capacity, timing and cost sources:
+* Unknown profile assumptions and how they affect the design question:
+* Invoking transition ID, source state and guard to resolve:
+
+[cols="1,2,2,2,2"]
+|===
+|Question ID |Vision/profile basis and decision-driving question |Sources and actual answer / unknown |Five Amigos findings and decision consequence |Affected guard / next transition
+| | | | |
+|===
+
+== Concern selection
+
+[cols="2,1,2,2,2"]
+|===
+|Architectural concern |Relevant / unchanged / not applicable |Reason and sources |Decision or evidence needed |Owner / affected arc42 record
+| | | | |
+|===
+
+Use only relevant sections below. An unchecked field is unknown, not evidence of no impact.
+
+== Quality scenarios and options
+
+[cols="1,2,2,2,2"]
+|===
+|Requirement / quality goal |Scenario and observable target |Assumptions / constraints |Options and competing consequences |Evidence / unresolved decision
+| | | | |
+|===
+
+* Prioritized goals and the source of priorities:
+* Existing/simpler alternative and reason for the proposed direction:
+* Technical, operational and economic consequences, including support/lock-in where relevant:
+
+== System, domain and data ownership
+
+[cols="1,2,2,2,2"]
+|===
+|Capability / component |Responsibility and owner |Data and lifecycle ownership |Dependencies / external actors |Linked criteria
+| | | | |
+|===
+
+* Module/service boundaries and internal structural approach:
+* Data models, state/transaction boundaries, consistency and retention:
+* Schema/data migration and consumer consequences:
+
+== Integration, trust and security
+
+[cols="1,2,2,2,2"]
+|===
+|Interface / event |Consumer, provider and ownership |Behavior, errors and delivery semantics |Versioning / compatibility |Trust, identity and data-protection needs
+| | | | |
+|===
+
+* Applicable security/privacy/policy constraints and actual specialist input:
+* Validation, authorization, secret handling and trust-boundary responsibilities:
+* Unresolved legal, commercial or permitted-usage decisions and their owners:
+
+== Runtime, deployment and operation
+
+[cols="1,2,2,2,2"]
+|===
+|Scenario / workload |Runtime collaboration |Deployment / resource assumptions |Failure containment and recovery |Verification / observation required
+| | | | |
+|===
+
+* Deployment topology, environments and network/configuration ownership:
+* Capacity/performance assumptions and required measurements:
+* Availability, observability, backup/recovery and operating responsibilities:
+
+Distinguish dependency direction, runtime calls and deployment/trust boundaries. Identify substitutions in any planned verification.
+
+== Internal application design when relevant
+
+* Chosen or proposed approach, such as hexagonal architecture, and its decision source:
+* Application core, business rules and use-case responsibilities:
+* Necessary ports/adapters and concrete dependency/import direction:
+* Bootstrap/composition and actual implementation selection:
+* Fit checks and justified exceptions, if the approach is selected:
+
+== Evolution and delivery
+
+* Missing foundations, implementation owners and ordered transition steps:
+* Compatibility, rollout, rollback, retirement and technical-debt consequences:
+* Applicable architecture/contract/quality checks and verified commands:
+* Missing measurements or tooling as explicit work:
+* Affected requirements, arc42 views, ADRs, user guidance and operations records:
+
+== Review and handoff
+
+* Selected/proposed solution and resulting process/transition IDs:
+* Event sources, trigger guards, owners and proposed versus configured rule status:
+* Documentation-impact routes and actual reconciliation status:
+* Actual contributions and reviewed candidate version:
+* Open decisions, blocking scope, risk owners and next actions:
+* Decision authority, actual outcome and conditions, if recorded:
+* Next slice and its architecture exit conditions met / blocked / not assessed:
+* Implementation, conformance and executed evidence, separately from proposal/review:
