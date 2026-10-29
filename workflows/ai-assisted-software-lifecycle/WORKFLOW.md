@@ -152,6 +152,21 @@ from the lifecycle work record. Architecture and documentation remain connected
 workstreams. `evidence.qualified` returns only the stated requirement scope;
 assess remaining lifecycle obligations before `candidate.verified`.
 
+## Agile selection and ticket flow
+
+Use [Agile Work Management and Ticket Flow](../agile-work-management/WORKFLOW.md)
+across refinement, Plan, Implement, Verify and Operate/learn. It owns the method
+selection, planning questions, ticket decomposition/selection transitions,
+Sprint or pull/WIP rules and review/improvement routing. Requirements-to-evidence
+owns criterion/test/evidence development; Five Amigos returns scoped findings.
+
+Its transition table derives event types and trigger guards from the process.
+Actual occurrence time, trusted source, cadence and ticket-system binding are
+project-specific. Map events to this lifecycle by scope and occurrence identity;
+a definition is not an observed event. Planning selection does not establish
+engineering completion, release authority or a configured automation. Reference
+its planning record from the lifecycle work record rather than duplicating rules.
+
 ## Phases, deliverables and exit conditions
 
 For each applicable phase, record its result and exit condition. A phase can be
