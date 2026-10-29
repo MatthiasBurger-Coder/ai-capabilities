@@ -3,7 +3,56 @@
 Reusable workflow templates for deciding how an AI-assisted software task
 starts, proceeds, is verified and reaches its delivery boundary. Adapt them to
 the target project's triggers, constraints, decision owners and existing
-authorization. Current status: first draft.
+authorization. Current status: first draft of the reference model; documented
+workflows are not yet evidence of repeatable success in adopting projects.
+
+## Purpose and reference model
+
+Model how an ideal principal developer with fullstack and DevOps competence
+works across requirements, architecture, implementation, test development,
+delivery and operation. The ideal includes recognizing knowledge limits,
+challenging assumptions, seeking appropriate expertise and correcting decisions
+from evidence.
+
+Separate two concerns:
+
+| Concern | Purpose |
+| --- | --- |
+| Complete reference model | Identify the questions, methods, responsibilities and evidence a capable practitioner must be able to consider |
+| Project-specific application | Select the relevant work from actual user needs, constraints, risks, existing decisions and authority |
+
+Completeness belongs to the reference model. The concrete workload follows from
+reasoned selection; a small correction need not execute the entire model.
+Assess model completeness and application proportionality separately. The
+coverage tree below exposes both existing coverage and remaining depth.
+
+### Knowledge depth and personal reflection
+
+A topic label or a named technique does not establish usable expertise.
+Develop relevant branches through domain, subdomain, method, selection decision,
+concrete application and evidence/reflection. Each developed method should make
+clear when and why it applies, how to use it, what observations qualify its
+result and what limitations or other perspectives remain.
+
+This model also serves as a reflection of the author's knowledge and engineering
+judgment. Keep described knowledge, reasoned decisions, practical application,
+verified outcomes and transfer to other situations distinct. Personal competence
+evidence and learning material belong in appropriate adopting projects or
+training resources; the workflow repository retains process rules and references.
+
+### Perspectives and execution
+
+The principal developer coordinates requirements, key-user, architecture,
+fullstack development, test engineering and DevOps/operations perspectives.
+These are responsibilities a practitioner may switch between, not necessarily
+separate people or agents. Follow dependencies sequentially; perform independent
+work in parallel when inputs, ownership and contracts permit it. Reconcile the
+results against a shared candidate.
+
+Several role passes by one agent add viewpoints but do not establish independent
+review or actual stakeholder validation. Use specialist input and real user
+evidence where needed; select a full Five Amigos review only through the
+lifecycle route and project policy.
 
 | Workflow | Purpose | Main result |
 | --- | --- | --- |
@@ -17,6 +66,97 @@ The lifecycle selects when a Five Amigos review is useful. The review returns
 its findings to the invoking phase; consensus alone does not authorize work or
 establish that an implementation meets its acceptance criteria. The linked
 workflow documents define the process rules; this README provides an overview.
+
+## Knowledge and workflow coverage
+
+This tree maps the reference model's current breadth and depth. It describes
+workflow coverage and open development areas, not proven personal competence
+or operational validation.
+
+**✅ Documented process · 🆕 Added by the requirements-to-evidence change ·
+◐ Partially described · ○ Further depth remains open**
+
+The 🆕 entries were introduced by the merged
+[PR #2](https://github.com/MatthiasBurger-Coder/ai-capabilities/pull/2).
+They are part of `main`; 🆕 identifies their origin as recent additions, not an
+open proposal.
+
+Documented process coverage does not imply exhaustive treatment of its technical
+discipline. Open branches indicate development directions, not supplied
+capabilities or a commitment to add generic curricula to this repository.
+
+```mermaid
+flowchart LR
+    Root["📁 Principal Engineering"]
+    Root --> Process["📁 Process and collaboration"]
+    Process --> Lifecycle["✅ Lifecycle"]
+    Lifecycle --> LifecycleContent["States, events and trigger guards<br/>scope and authority<br/>blockers and handoffs"]
+    Process --> Amigos["✅ Five Amigos"]
+    Amigos --> AmigosContent["Shared sources and perspectives<br/>objections and consensus<br/>conditional full review"]
+    Process --> Coordination["🆕 Roles and coordination"]
+    Coordination --> CoordinationContent["Sequential dependencies<br/>parallel work<br/>shared candidate reconciliation"]
+    Root --> Requirements["📁 Requirements development"]
+    Requirements --> Need["🆕 User need"]
+    Need --> NeedContent["Users and tasks<br/>problem and intended benefit<br/>sources, assumptions and non-goals"]
+    Requirements --> Specification["🆕 Requirements"]
+    Specification --> SpecificationContent["Business rules and states<br/>behavior and quality scenarios<br/>priorities, dependencies and revisions"]
+    Requirements --> Acceptance["🆕 Acceptance criteria"]
+    Acceptance --> AcceptanceContent["Preconditions and stimuli<br/>observable results<br/>oracle sources and failure cases"]
+    Requirements --> RequirementsOpen["○ Further depth"]
+    RequirementsOpen --> RequirementsOpenContent["Elicitation techniques<br/>domain modeling<br/>conflict resolution and validation"]
+    Root --> Architecture["📁 Architecture"]
+    Architecture --> Decisions["✅ Decision process"]
+    Decisions --> DecisionsContent["Context and boundaries<br/>quality goals and options<br/>rationale and history"]
+    Architecture --> Concerns["✅ Assessment concerns"]
+    Concerns --> ConcernsContent["Structure, data and integration<br/>security and runtime<br/>deployment, costs and migration"]
+    Architecture --> Hexagonal["◐ Hexagonal design checks"]
+    Architecture --> ArchitectureOpen["○ Further depth"]
+    ArchitectureOpen --> ArchitectureOpenContent["Concrete design methods<br/>distributed systems and failure models<br/>capacity models and measurement procedures"]
+    Root --> Testing["📁 Test development"]
+    Testing --> TestDesign["🆕 Test design"]
+    TestDesign --> TestDesignContent["Criteria, risks and test data<br/>expected results and observation"]
+    Testing --> Techniques["🆕 Technique selection"]
+    Techniques --> TechniquesContent["Equivalence classes and boundaries<br/>decision tables and state transitions<br/>properties, failures and recovery"]
+    Testing --> Pyramid["🆕 Test pyramid"]
+    Pyramid --> PyramidContent["Unit and component<br/>contract and integration<br/>system and end-to-end<br/>level selection and limitations"]
+    Testing --> Matrix["🆕 Test matrix"]
+    Matrix --> MatrixContent["Criteria, risks and scenarios<br/>levels, paths and environments<br/>planned coverage and actual results"]
+    Testing --> Evidence["🆕 Evidence assessment"]
+    Evidence --> EvidenceContent["Candidate and environment<br/>failures and blockers<br/>validity, reuse and reruns"]
+    Testing --> TestingOpen["○ Further depth"]
+    TestingOpen --> TestingOpenContent["Detailed techniques and case studies<br/>mutation and combinatorial testing<br/>flaky tests and test maintenance"]
+    Root --> Development["📁 Fullstack implementation"]
+    Development --> Fullstack["🆕 End-to-end mapping"]
+    Fullstack --> FullstackContent["Frontend and user interaction<br/>backend and business rules<br/>data and external interfaces"]
+    Development --> Implementation["◐ Implementation ordering"]
+    Implementation --> ImplementationContent["Bounded implementation slices<br/>TDD ordering"]
+    Development --> DevelopmentOpen["○ Further depth"]
+    DevelopmentOpen --> DevelopmentOpenContent["Frontend architecture and state<br/>backend patterns and transactions<br/>data migration and concurrency"]
+    Root --> Operations["📁 DevOps and operations"]
+    Operations --> Delivery["◐ Build, CI and configuration"]
+    Operations --> Environments["🆕 Reproducible verification conditions"]
+    Environments --> EnvironmentsContent["Build and candidate identity<br/>real and substituted dependencies<br/>missing prerequisites"]
+    Operations --> Runtime["◐ Release and operation"]
+    Runtime --> RuntimeContent["Release, rollout and recovery<br/>observability and incidents"]
+    Operations --> OperationsOpen["○ Further depth"]
+    OperationsOpen --> OperationsOpenContent["Pipeline design and Infrastructure as Code<br/>SLOs and operating models<br/>backup and recovery exercises"]
+    Root --> Documentation["📁 Documentation and knowledge"]
+    Documentation --> DocsCode["✅ Documentation as Code"]
+    DocsCode --> DocsCodeContent["Sources and actual status<br/>arc42 and decision history<br/>relationships and change impacts"]
+    Documentation --> Trace["🆕 Traceability"]
+    Trace --> TraceContent["User need through verification evidence<br/>trace and test matrix templates<br/>illustrative walkthroughs"]
+    Documentation --> Competence["○ Personal competence reflection"]
+    Competence --> CompetenceContent["Knowledge and rationale<br/>application and evidence<br/>transfer to other situations"]
+    Root --> AI["📁 AI-specific quality"]
+    AI --> AIControls["◐ Quality controls"]
+    AIControls --> AIControlsContent["Model and prompt versions<br/>output quality and non-determinism<br/>prompt injection and tool permissions<br/>data provenance and intervention points"]
+    AI --> AIOpen["○ Detailed workstreams"]
+```
+
+Reassess this map whenever workflow scope changes. Base status changes on the
+actual artifacts and distinguish defined methods from executed evidence.
+The linked workflows remain the source of process rules; this map provides
+navigation and a development overview.
 
 ## Shared transition model
 
@@ -65,7 +205,7 @@ flowchart TD
     Event["Stakeholder intent or verified lifecycle event"] --> Vision["Create or reconcile sourced vision and documentation impact"]
     Vision --> Understand["1. Understand goal, scope and acceptance"]
     Understand --> Assess["2. Assess impact, uncertainty and authority"]
-    Assess --> ReviewNeeded{"Multi-perspective clarification needed?"}
+    Assess --> ReviewNeeded{"Full Five Amigos review selected by route and policy?"}
     ReviewNeeded -->|Yes| Review["Five Amigos review"]
     Review --> ReviewResult{"Blocking questions resolved?"}
     ReviewResult -->|Yes| Path
@@ -193,8 +333,20 @@ The [requirements-to-evidence workstream](workflows/requirements-to-evidence/WOR
 connects user need, developed requirements, acceptance criteria, test design,
 a living test matrix, implementation and qualified evidence. It spans existing
 lifecycle phases rather than adding a mandatory waterfall or approval gate.
-Test-pyramid placement and matrix coverage answer different questions; planned
-coverage is kept separate from actual execution and valid evidence.
+Requirements and test development are continuing workstreams alongside
+architecture and implementation. Test design may reveal unclear expectations
+or poor testability and return work to requirements or architecture.
+
+The test pyramid selects effective verification levels; the test matrix checks
+coverage across criteria, risks, components/interfaces and relevant quality
+attributes. Many unit tests alone do not establish requirement or integration
+coverage. Planned coverage stays separate from actual execution and valid evidence.
+
+An event records an observed fact. A trigger combines that event with the
+source state, affected revision and guard to select work; it does not grant
+authority or prove an action succeeded. Requirement changes reassess dependent
+criteria, tests, implementation and evidence while preserving valid independent
+results.
 
 Adopt its [trace template](workflows/requirements-to-evidence/templates/requirement-trace-template.md)
 and [test matrix](workflows/requirements-to-evidence/templates/test-matrix-template.md)
