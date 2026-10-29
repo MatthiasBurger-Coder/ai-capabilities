@@ -3,7 +3,56 @@
 Reusable workflow templates for deciding how an AI-assisted software task
 starts, proceeds, is verified and reaches its delivery boundary. Adapt them to
 the target project's triggers, constraints, decision owners and existing
-authorization. Current status: first draft.
+authorization. Current status: first draft of the reference model; documented
+workflows are not yet evidence of repeatable success in adopting projects.
+
+## Purpose and reference model
+
+Model how an ideal principal developer with fullstack and DevOps competence
+works across requirements, architecture, implementation, test development,
+delivery and operation. The ideal includes recognizing knowledge limits,
+challenging assumptions, seeking appropriate expertise and correcting decisions
+from evidence.
+
+Separate two concerns:
+
+| Concern | Purpose |
+| --- | --- |
+| Complete reference model | Identify the questions, methods, responsibilities and evidence a capable practitioner must be able to consider |
+| Project-specific application | Select the relevant work from actual user needs, constraints, risks, existing decisions and authority |
+
+Completeness belongs to the reference model. The concrete workload follows from
+reasoned selection; a small correction need not execute the entire model.
+Assess model completeness and application proportionality separately. The
+coverage tree below exposes both existing coverage and remaining depth.
+
+### Knowledge depth and personal reflection
+
+A topic label or a named technique does not establish usable expertise.
+Develop relevant branches through domain, subdomain, method, selection decision,
+concrete application and evidence/reflection. Each developed method should make
+clear when and why it applies, how to use it, what observations qualify its
+result and what limitations or other perspectives remain.
+
+This model also serves as a reflection of the author's knowledge and engineering
+judgment. Keep described knowledge, reasoned decisions, practical application,
+verified outcomes and transfer to other situations distinct. Personal competence
+evidence and learning material belong in appropriate adopting projects or
+training resources; the workflow repository retains process rules and references.
+
+### Perspectives and execution
+
+The principal developer coordinates requirements, key-user, architecture,
+fullstack development, test engineering and DevOps/operations perspectives.
+These are responsibilities a practitioner may switch between, not necessarily
+separate people or agents. Follow dependencies sequentially; perform independent
+work in parallel when inputs, ownership and contracts permit it. Reconcile the
+results against a shared candidate.
+
+Several role passes by one agent add viewpoints but do not establish independent
+review or actual stakeholder validation. Use specialist input and real user
+evidence where needed; select a full Five Amigos review only through the
+lifecycle route and project policy.
 
 | Workflow | Purpose | Main result |
 | --- | --- | --- |
@@ -156,7 +205,7 @@ flowchart TD
     Event["Stakeholder intent or verified lifecycle event"] --> Vision["Create or reconcile sourced vision and documentation impact"]
     Vision --> Understand["1. Understand goal, scope and acceptance"]
     Understand --> Assess["2. Assess impact, uncertainty and authority"]
-    Assess --> ReviewNeeded{"Multi-perspective clarification needed?"}
+    Assess --> ReviewNeeded{"Full Five Amigos review selected by route and policy?"}
     ReviewNeeded -->|Yes| Review["Five Amigos review"]
     Review --> ReviewResult{"Blocking questions resolved?"}
     ReviewResult -->|Yes| Path
@@ -284,8 +333,20 @@ The [requirements-to-evidence workstream](workflows/requirements-to-evidence/WOR
 connects user need, developed requirements, acceptance criteria, test design,
 a living test matrix, implementation and qualified evidence. It spans existing
 lifecycle phases rather than adding a mandatory waterfall or approval gate.
-Test-pyramid placement and matrix coverage answer different questions; planned
-coverage is kept separate from actual execution and valid evidence.
+Requirements and test development are continuing workstreams alongside
+architecture and implementation. Test design may reveal unclear expectations
+or poor testability and return work to requirements or architecture.
+
+The test pyramid selects effective verification levels; the test matrix checks
+coverage across criteria, risks, components/interfaces and relevant quality
+attributes. Many unit tests alone do not establish requirement or integration
+coverage. Planned coverage stays separate from actual execution and valid evidence.
+
+An event records an observed fact. A trigger combines that event with the
+source state, affected revision and guard to select work; it does not grant
+authority or prove an action succeeded. Requirement changes reassess dependent
+criteria, tests, implementation and evidence while preserving valid independent
+results.
 
 Adopt its [trace template](workflows/requirements-to-evidence/templates/requirement-trace-template.md)
 and [test matrix](workflows/requirements-to-evidence/templates/test-matrix-template.md)
