@@ -9,6 +9,7 @@ authorization. Current status: first draft.
 | --- | --- | --- |
 | [AI-Assisted Software Lifecycle](workflows/ai-assisted-software-lifecycle/WORKFLOW.md) | Overall process: route tasks through applicable phases and control consequential actions | Evidenced delivery with decisions, limitations and next ownership |
 | [Five Amigos Lifecycle Review](workflows/five-amigos-round-table/WORKFLOW.md) | Optional lifecycle sub-process: resolve material uncertainty through five perspectives | One reviewed candidate, explicit positions and unresolved decisions |
+| [Requirements-Driven Development and Verification](workflows/requirements-to-evidence/WORKFLOW.md) | Lifecycle workstream: develop user needs into requirements, acceptance, test design and qualified evidence | Traceable requirements, living test matrix and candidate-bound evidence |
 | [Architecture Decisions and Evolution](workflows/architecture-design/WORKFLOW.md) | Lifecycle workstream: assess system structure, data, quality, integration, operation and change | Scoped decisions, tradeoffs, evidence needs, risks and transition plans |
 | [Documentation-as-Code](workflows/documentation-as-code/WORKFLOW.md) | Cross-cutting lifecycle sub-process: connect stakeholder vision to delivery and independent events | Sourced AsciiDoc, bidirectional traceability and validation evidence |
 
@@ -22,8 +23,9 @@ workflow documents define the process rules; this README provides an overview.
 All disciplines follow the same
 [state-transition contract](workflows/ai-assisted-software-lifecycle/references/transition-model.md),
 recorded with the [transition template](workflows/ai-assisted-software-lifecycle/templates/transition-template.md).
-The vision and actual project profile determine relevant questions. Selected
-questions are answered through Five Amigos, then the proposed/selected solution
+The vision and actual project profile determine relevant questions. Resolve them
+through existing evidence or selected perspectives; use Five Amigos when the
+lifecycle route selects the full review. The proposed/selected solution
 determines process steps, event/trigger rules and documentation consequences.
 
 ```mermaid
@@ -184,6 +186,21 @@ Its [documentation plan template](workflows/documentation-as-code/templates/docu
 defines the proposed chapter structure, source/status records and relationships.
 The [vision template](workflows/documentation-as-code/templates/vision-template.adoc)
 captures the stakeholder's initial intent without implying approval.
+
+## Requirements-driven development and verification
+
+The [requirements-to-evidence workstream](workflows/requirements-to-evidence/WORKFLOW.md)
+connects user need, developed requirements, acceptance criteria, test design,
+a living test matrix, implementation and qualified evidence. It spans existing
+lifecycle phases rather than adding a mandatory waterfall or approval gate.
+Test-pyramid placement and matrix coverage answer different questions; planned
+coverage is kept separate from actual execution and valid evidence.
+
+Adopt its [trace template](workflows/requirements-to-evidence/templates/requirement-trace-template.md)
+and [test matrix](workflows/requirements-to-evidence/templates/test-matrix-template.md)
+or reuse equivalent project artifacts. Product/test work can be sequential or
+parallel with explicit dependencies. Requirement changes reopen affected evidence;
+qualified scoped evidence returns to the lifecycle's overall candidate assessment.
 
 ## Architecture decisions and evolution
 
