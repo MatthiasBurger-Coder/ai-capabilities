@@ -40,7 +40,7 @@ solutions already chosen.
 
 | Source state | Event / guard | Action / decision | Result and next route |
 | --- | --- | --- | --- |
-| Vision/profile available | Material architectural question identified | Formulate a scoped question with evidence sources, affected goal and decision consequence | Question ready for Five Amigos |
+| Vision/profile available | Material architectural question identified | Formulate a scoped question with evidence sources, affected goal and decision consequence | Question ready for the review route selected by the lifecycle and project policy |
 | Questions reviewed | Actual answers resolve the relevant guard | Compare feasible options at the evidenced scope/scale; record proposal or actual scoped decision | Solution proposed/selected or clarification still needed |
 | Solution selected | Authority, assumptions and next-slice prerequisites are explicit | Derive needed process steps, event sources, trigger guards, checks and owners | Process transitions defined; execution readiness evaluated separately |
 | Architecture result recorded | Material context, decision or evidence changed | Identify affected arc42 and dependent documents through the documentation workflow | Documentation pending, then reconciled only after actual update/check |
@@ -92,10 +92,14 @@ meeting or permission gate.
 2. Select relevant concerns and formulate decision-driving questions with IDs,
    source references and the guard/decision each answer affects. Record why
    other areas are unchanged or not applicable rather than asking everything.
-3. Submit the selected material questions and shared profile to Five Amigos.
+3. Resolve the selected questions using existing evidence and the review route
+   selected by the [lifecycle workflow](../ai-assisted-software-lifecycle/WORKFLOW.md)
+   and target project policy. Submit questions and the shared profile to Five
+   Amigos only when that route selects the full review; otherwise use the
+   selected perspectives or existing evidence and record the routing rationale.
    Consolidate sourced answers, alternatives, user-validation gaps and unresolved
-   owner decisions. Existing evidence may answer a question; unknowns must not
-   become facts or architecture choices by default.
+   owner decisions. Unknowns must not become facts or architecture choices by
+   default.
 4. Describe the current context and required future behavior. Compare feasible
    options and their consequences across selected concerns, including retaining
    or incrementally improving the existing solution.

@@ -53,11 +53,14 @@ verified project facts may already answer a question.
 | Operation and maintenance | Which observed signal requires intervention or changes a prior assumption? | Assigned operational signals, incidents, feedback and support changes | Authorized response, affected requirements and follow-up transitions |
 | Documentation | Which facts, relationships or status records change, and which sources support that change? | Transition result, source revisions, decisions and actual evidence | Reconciled documents or justified no-content-change outcome |
 
-Send selected material questions to
-[Five Amigos](../../five-amigos-round-table/WORKFLOW.md). Each perspective
-answers relevant parts using the same packet; capture missing specialist or
-actual user input explicitly. The review result identifies a proposed solution,
-actual decisions, remaining questions and affected transition guards.
+Resolve selected material questions using existing evidence and the review route
+selected by the [lifecycle workflow](../WORKFLOW.md) and target project policy.
+Invoke [Five Amigos](../../five-amigos-round-table/WORKFLOW.md) only when that
+route selects the full review; otherwise use the selected perspectives or
+existing evidence and record the routing rationale. When perspectives contribute,
+use the same packet and capture missing specialist or actual user input
+explicitly. Record sourced answers, a proposed solution, actual decisions,
+remaining questions and affected transition guards.
 
 ## Derive the next process from the solution
 
