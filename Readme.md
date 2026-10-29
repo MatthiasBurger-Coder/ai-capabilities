@@ -18,6 +18,97 @@ its findings to the invoking phase; consensus alone does not authorize work or
 establish that an implementation meets its acceptance criteria. The linked
 workflow documents define the process rules; this README provides an overview.
 
+## Knowledge and workflow coverage
+
+This tree maps the reference model's current breadth and depth. It describes
+workflow coverage and open development areas, not proven personal competence
+or operational validation.
+
+**✅ Documented process · 🆕 Added by the requirements-to-evidence change ·
+◐ Partially described · ○ Further depth remains open**
+
+The 🆕 entries were introduced by the merged
+[PR #2](https://github.com/MatthiasBurger-Coder/ai-capabilities/pull/2).
+They are part of `main`; 🆕 identifies their origin as recent additions, not an
+open proposal.
+
+Documented process coverage does not imply exhaustive treatment of its technical
+discipline. Open branches indicate development directions, not supplied
+capabilities or a commitment to add generic curricula to this repository.
+
+```mermaid
+flowchart LR
+    Root["📁 Principal Engineering"]
+    Root --> Process["📁 Process and collaboration"]
+    Process --> Lifecycle["✅ Lifecycle"]
+    Lifecycle --> LifecycleContent["States, events and trigger guards<br/>scope and authority<br/>blockers and handoffs"]
+    Process --> Amigos["✅ Five Amigos"]
+    Amigos --> AmigosContent["Shared sources and perspectives<br/>objections and consensus<br/>conditional full review"]
+    Process --> Coordination["🆕 Roles and coordination"]
+    Coordination --> CoordinationContent["Sequential dependencies<br/>parallel work<br/>shared candidate reconciliation"]
+    Root --> Requirements["📁 Requirements development"]
+    Requirements --> Need["🆕 User need"]
+    Need --> NeedContent["Users and tasks<br/>problem and intended benefit<br/>sources, assumptions and non-goals"]
+    Requirements --> Specification["🆕 Requirements"]
+    Specification --> SpecificationContent["Business rules and states<br/>behavior and quality scenarios<br/>priorities, dependencies and revisions"]
+    Requirements --> Acceptance["🆕 Acceptance criteria"]
+    Acceptance --> AcceptanceContent["Preconditions and stimuli<br/>observable results<br/>oracle sources and failure cases"]
+    Requirements --> RequirementsOpen["○ Further depth"]
+    RequirementsOpen --> RequirementsOpenContent["Elicitation techniques<br/>domain modeling<br/>conflict resolution and validation"]
+    Root --> Architecture["📁 Architecture"]
+    Architecture --> Decisions["✅ Decision process"]
+    Decisions --> DecisionsContent["Context and boundaries<br/>quality goals and options<br/>rationale and history"]
+    Architecture --> Concerns["✅ Assessment concerns"]
+    Concerns --> ConcernsContent["Structure, data and integration<br/>security and runtime<br/>deployment, costs and migration"]
+    Architecture --> Hexagonal["◐ Hexagonal design checks"]
+    Architecture --> ArchitectureOpen["○ Further depth"]
+    ArchitectureOpen --> ArchitectureOpenContent["Concrete design methods<br/>distributed systems and failure models<br/>capacity models and measurement procedures"]
+    Root --> Testing["📁 Test development"]
+    Testing --> TestDesign["🆕 Test design"]
+    TestDesign --> TestDesignContent["Criteria, risks and test data<br/>expected results and observation"]
+    Testing --> Techniques["🆕 Technique selection"]
+    Techniques --> TechniquesContent["Equivalence classes and boundaries<br/>decision tables and state transitions<br/>properties, failures and recovery"]
+    Testing --> Pyramid["🆕 Test pyramid"]
+    Pyramid --> PyramidContent["Unit and component<br/>contract and integration<br/>system and end-to-end<br/>level selection and limitations"]
+    Testing --> Matrix["🆕 Test matrix"]
+    Matrix --> MatrixContent["Criteria, risks and scenarios<br/>levels, paths and environments<br/>planned coverage and actual results"]
+    Testing --> Evidence["🆕 Evidence assessment"]
+    Evidence --> EvidenceContent["Candidate and environment<br/>failures and blockers<br/>validity, reuse and reruns"]
+    Testing --> TestingOpen["○ Further depth"]
+    TestingOpen --> TestingOpenContent["Detailed techniques and case studies<br/>mutation and combinatorial testing<br/>flaky tests and test maintenance"]
+    Root --> Development["📁 Fullstack implementation"]
+    Development --> Fullstack["🆕 End-to-end mapping"]
+    Fullstack --> FullstackContent["Frontend and user interaction<br/>backend and business rules<br/>data and external interfaces"]
+    Development --> Implementation["◐ Implementation ordering"]
+    Implementation --> ImplementationContent["Bounded implementation slices<br/>TDD ordering"]
+    Development --> DevelopmentOpen["○ Further depth"]
+    DevelopmentOpen --> DevelopmentOpenContent["Frontend architecture and state<br/>backend patterns and transactions<br/>data migration and concurrency"]
+    Root --> Operations["📁 DevOps and operations"]
+    Operations --> Delivery["◐ Build, CI and configuration"]
+    Operations --> Environments["🆕 Reproducible verification conditions"]
+    Environments --> EnvironmentsContent["Build and candidate identity<br/>real and substituted dependencies<br/>missing prerequisites"]
+    Operations --> Runtime["◐ Release and operation"]
+    Runtime --> RuntimeContent["Release, rollout and recovery<br/>observability and incidents"]
+    Operations --> OperationsOpen["○ Further depth"]
+    OperationsOpen --> OperationsOpenContent["Pipeline design and Infrastructure as Code<br/>SLOs and operating models<br/>backup and recovery exercises"]
+    Root --> Documentation["📁 Documentation and knowledge"]
+    Documentation --> DocsCode["✅ Documentation as Code"]
+    DocsCode --> DocsCodeContent["Sources and actual status<br/>arc42 and decision history<br/>relationships and change impacts"]
+    Documentation --> Trace["🆕 Traceability"]
+    Trace --> TraceContent["User need through verification evidence<br/>trace and test matrix templates<br/>illustrative walkthroughs"]
+    Documentation --> Competence["○ Personal competence reflection"]
+    Competence --> CompetenceContent["Knowledge and rationale<br/>application and evidence<br/>transfer to other situations"]
+    Root --> AI["📁 AI-specific quality"]
+    AI --> AIControls["◐ Quality controls"]
+    AIControls --> AIControlsContent["Model and prompt versions<br/>output quality and non-determinism<br/>prompt injection and tool permissions<br/>data provenance and intervention points"]
+    AI --> AIOpen["○ Detailed workstreams"]
+```
+
+Reassess this map whenever workflow scope changes. Base status changes on the
+actual artifacts and distinguish defined methods from executed evidence.
+The linked workflows remain the source of process rules; this map provides
+navigation and a development overview.
+
 ## Shared transition model
 
 All disciplines follow the same
