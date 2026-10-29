@@ -94,6 +94,11 @@ the project; existing valid artifacts can establish a starting state directly.
 | Operation assigned | Actual incident, feedback or dependency/policy change | Assess response and affected prior assumptions | Scoped response or reopened questions/design/verification |
 | Documentation review pending | A material transition result changes documented facts | Reconcile sources, forward/reverse links and status; run applicable target checks | Documentation reconciled or documentation blocked |
 
+For the detailed need-to-evidence route, use the
+[requirements-to-evidence workstream](../../requirements-to-evidence/WORKFLOW.md).
+Its scoped `evidence.qualified` result feeds the lifecycle candidate assessment;
+it does not silently advance other disciplines or authorize delivery actions.
+
 ## Cross-discipline consistency
 
 Maintain state per affected scope and discipline. Architecture can be proposed

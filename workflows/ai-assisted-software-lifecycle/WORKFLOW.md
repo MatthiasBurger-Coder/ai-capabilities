@@ -56,6 +56,8 @@ record the source and candidate/version. Model suggestions are proposals.
 | `solution.selected` | A scoped choice is supported by the relevant actual authority | Derive required process actions, events, triggers, checks and documentation impacts |
 | `process.defined` | A solution's actions, guards, owners and outputs have been described | Record proposed/configured transition rules; assess execution prerequisites separately |
 | `documentation.impact.identified` | A material transition outcome affects documented facts or traceability | Invoke documentation reconciliation; keep the update pending until performed |
+| `need.recorded` / `requirement.changed` | A sourced need is recorded or expected behavior materially changes | Invoke the requirements-to-evidence workstream; refine scope or reassess dependent criteria, implementation and evidence |
+| `evidence.qualified` | A scoped requirement evidence assessment has actually qualified its criteria | Assess overall lifecycle candidate obligations before recording `candidate.verified`; scope evidence alone does not establish release readiness |
 | `requirement.unclear` | Material behavior, scope or acceptance cannot be established | Refinement; Five Amigos when several perspectives are needed |
 | `change.assessed` | Impact, uncertainty and reversibility have been examined | Select the work path and applicable controls |
 | `design.changed` | Ownership, contracts, deployment or quality goals change materially | Revisit design and affected requirements/risk decisions |
@@ -82,8 +84,9 @@ integration and technical enforcement in the target environment.
 Assess impact, uncertainty, reversibility, affected data/systems and dependencies.
 Start with the vision and an evidence-based project profile as defined in the
 shared transition model. Derive only questions relevant to that scope; send
-selected material questions through Five Amigos before choosing dependent
-solutions. Derive the next process from the answer and actual decision status.
+selected material questions through the selected perspectives or existing evidence
+before choosing dependent solutions. Invoke Five Amigos only when the lifecycle
+route and target project policy select the full review. Derive the next process from the answer and actual decision status.
 Identify data classification and applicable constraints, including deadlines,
 budget and mandated technology. Record reasons and unresolved inputs, not an
 unsupported numeric confidence score.
@@ -125,6 +128,29 @@ across assessment, design, verification and operational feedback. Select affecte
 concerns such as data, quality, integration, security, deployment and evolution.
 Hexagonal architecture is a proposed option for internal application design,
 not the definition of the entire architecture or a default for every decision.
+
+## Requirements-to-evidence workstream
+
+Use [Requirements-Driven Development and Verification](../requirements-to-evidence/WORKFLOW.md)
+when developing or changing expected behavior, or when defects/feedback challenge
+existing acceptance. It defines the detailed states, trusted event sources,
+guards, ownership and recovery routes from user need through qualified evidence.
+Its event vocabulary specializes this lifecycle's general routing: failed checks
+map to `check.failed`, unavailable prerequisites to `prerequisite.missing`, and
+unclear expected behavior to `requirement.unclear`. Preserve occurrence/candidate
+correlation instead of creating duplicate work for two names of the same fact.
+
+The workstream spans Understand through Handoff and re-enters from operational
+feedback. It develops requirements and acceptance, selects test levels using the
+test pyramid, and maintains criterion/risk coverage in a living test matrix.
+Follow its transition table for detailed readiness and evidence rules. Reuse
+existing artifacts for bounded changes rather than requiring a new ceremony.
+
+Reference its [trace record](../requirements-to-evidence/templates/requirement-trace-template.md)
+and [test matrix](../requirements-to-evidence/templates/test-matrix-template.md)
+from the lifecycle work record. Architecture and documentation remain connected
+workstreams. `evidence.qualified` returns only the stated requirement scope;
+assess remaining lifecycle obligations before `candidate.verified`.
 
 ## Phases, deliverables and exit conditions
 

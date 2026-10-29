@@ -52,6 +52,9 @@ actual response; absence of a response is not approval.
 
 - Candidate identity and changed artifacts:
 - Relevant plan, prerequisites and deviations:
+- Requirements-to-evidence trace/matrix references and assessed revisions, if applicable:
+- Test-level selection, required coverage gaps and product/test reconciliation:
+- Changed requirement/contract revisions, affected evidence and reuse/rerun decisions:
 
 | Criterion / risk ID | Applicable check / command / procedure | Candidate / environment / substitutions | Actual result: PASS / FAIL / NOT_RUN / BLOCKED / NOT_APPLICABLE | Evidence / limitations / reason |
 | --- | --- | --- | --- | --- |

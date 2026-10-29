@@ -31,6 +31,19 @@ policy proportionate; it is not a requirement to invent controls or approvers.
 - Conditions triggering architecture assessment, design, conformance or evolution review:
 - Actual architecture decision owner, delegated choices and evidence of existing authority:
 
+## Requirements and test-development context
+
+Adapt [requirements-to-evidence](../../requirements-to-evidence/WORKFLOW.md)
+using existing project specifications and test-management records where suitable.
+
+- Need/requirement/criterion sources, revision conventions and actual decision owners:
+- Criteria for next-slice readiness and handling unresolved expected outcomes:
+- Test-pyramid placement policy, required test levels and applicable quality checks:
+- Test-matrix location, coverage obligations and actual project thresholds:
+- Oracle/data/environment sources, substitutes and missing prerequisite owners:
+- Product/test work ordering, parallel ownership and candidate reconciliation:
+- Event-source mapping, requirement-change impact and evidence-reuse assessment:
+
 ## Events and trigger rules
 
 Use the lifecycle event vocabulary or define a project-specific event. An event
