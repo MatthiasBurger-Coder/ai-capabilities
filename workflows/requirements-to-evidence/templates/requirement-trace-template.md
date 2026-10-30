@@ -17,6 +17,20 @@ All IDs below are placeholders; an empty field is not a fact or approval.
 - Assumptions, unresolved questions and affected scope:
 - Selected review route, rationale and actual contributors:
 
+## Clarification and decision links
+
+Apply the [clarification route](../references/clarification-and-conflict-resolution.md)
+only where a question affects the next transition. Reuse an existing issue or
+decision record for the answer and its source.
+
+| Question ID / affected revision | Ambiguity or competing source claims | Affected criterion / transition | Required answer or distinguishing example | Actual decision owner / source | Status and answer evidence | Next action / re-entry condition |
+| --- | --- | --- | --- | --- | --- | --- |
+
+- Selected interpretation and decision-source revision:
+- Affected requirement/criterion revisions and matrix-row links:
+- Independent scope that can continue and justification:
+- Remaining actual-user or specialist validation gaps:
+
 ## Acceptance and oracle
 
 | Criterion ID/revision | Requirement link | Preconditions / stimulus | Observable expected result and oracle source | Relevant error / boundary / recovery cases | Real user validation needed / actual status |

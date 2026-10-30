@@ -108,8 +108,10 @@ flowchart LR
     Specification --> SpecificationContent["Business rules and states<br/>behavior and quality scenarios<br/>priorities, dependencies and revisions"]
     Requirements --> Acceptance["🆕 Acceptance criteria"]
     Acceptance --> AcceptanceContent["Preconditions and stimuli<br/>observable results<br/>oracle sources and failure cases"]
+    Requirements --> Clarification["🆕 Clarification and conflict resolution"]
+    Clarification --> ClarificationContent["Competing sources and missing oracles<br/>scoped questions and actual decision owners<br/>revisions, re-entry and matrix impact"]
     Requirements --> RequirementsOpen["○ Further depth"]
-    RequirementsOpen --> RequirementsOpenContent["Elicitation techniques<br/>domain modeling<br/>conflict resolution and validation"]
+    RequirementsOpen --> RequirementsOpenContent["Elicitation techniques<br/>domain modeling<br/>practical stakeholder validation"]
     Root --> Architecture["📁 Architecture"]
     Architecture --> Decisions["✅ Decision process"]
     Decisions --> DecisionsContent["Context and boundaries<br/>quality goals and options<br/>rationale and history"]
@@ -359,6 +361,12 @@ and [test matrix](workflows/requirements-to-evidence/templates/test-matrix-templ
 or reuse equivalent project artifacts. Product/test work can be sequential or
 parallel with explicit dependencies. Requirement changes reopen affected evidence;
 qualified scoped evidence returns to the lifecycle's overall candidate assessment.
+
+The [clarification and conflict-resolution route](workflows/requirements-to-evidence/references/clarification-and-conflict-resolution.md)
+develops ambiguous or conflicting expectations into sourced decisions and revised
+acceptance. It records the affected transition, real decision owner, oracle and
+matrix impact while preserving independent work. Its worked example is
+hypothetical; practical stakeholder validation remains open.
 
 ## Agile work management and ticket flow
 
