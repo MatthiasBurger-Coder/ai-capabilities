@@ -77,3 +77,32 @@ For a behavior change using TDD, an initial red test is implementation evidence
 that the intended check detects missing behavior. It is not delivered acceptance
 evidence. Keep production verification separate; reconcile the completed product
 and tests before RTE-06.
+
+## Conflicting quantity interpretations before planning
+
+This is a hypothetical routing example, not stakeholder input or execution evidence.
+
+1. A written domain contract specifies whole-item quantities; a user example
+   contains a fractional quantity. Preserve both source revisions and create
+   Q-1 against REQ-1 and the affected acceptance criterion. Do not assume which
+   source supersedes the other.
+2. Follow the [clarification route](clarification-and-conflict-resolution.md).
+   The requirements engineer asks whether the example concerns the same product
+   and unit. The test engineer requests the expected response to a fractional
+   input. Developer and architect identify affected API, persistence and UI
+   contracts. These are illustrative perspective contributions.
+3. While the answer is absent, the affected oracle remains unknown and that
+   slice cannot pass RTE-02/RTE-03. A separate slice may continue only if its
+   expected outcome and dependencies are independent of Q-1. A proposal to
+   round fractions is not a resolved requirement.
+4. Suppose the actual authorized owner later establishes that whole-item
+   quantities apply to this product and the example concerns another unit.
+   In an adopting project, retain the actual answer/source; the supposition
+   here supplies no such evidence. Revise REQ-1 and its criterion to state the
+   unit and rejection behavior, preserving the old revisions.
+5. Link matrix cases for whole-number boundaries and fractional rejection to
+   that oracle. Assess unit/domain checks and API integration for direct input,
+   plus UI feedback where the journey requires it. These are planned checks;
+   no passing result or evidence qualification is implied.
+6. Recheck the affected RTE guard and return to test design/coverage assessment.
+   Agile selection remains a separate decision under its existing workflow.

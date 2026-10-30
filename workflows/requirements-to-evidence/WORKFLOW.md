@@ -83,6 +83,11 @@ separate agents only within actual authorization and runtime support.
    A criterion is ready for test design when its expected outcome is established;
    unresolved material choices block only their dependent scope.
 
+Use the [clarification and conflict-resolution route](references/clarification-and-conflict-resolution.md)
+when ambiguity, incompatible sources or a missing oracle prevents the next
+scoped transition. It details the return paths of RTE-01/RTE-02/RTE-09/RTE-10;
+it adds no mandatory review or global readiness gate.
+
 ## Ticket selection and delivery coordination
 
 Pass requirement/criterion revisions, useful slices, dependencies, test-design
